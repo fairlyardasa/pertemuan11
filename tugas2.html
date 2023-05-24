@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nama</th>
+            <th scope="col">NIM</th>
+            <th scope="col">ANGKATAN</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td scope="row" id="nama"></td>
+            <td id="nim"></td>
+            <td id="angkatan"></td>
+          </tr>
+        </tbody>
+    
+
+    <script type="text/javascript">
+
+        var enabler = confirm("Apakah anda praktikan PPW1?")
+        if (enabler) {
+            var vnama = prompt("Tolong masukan nama Anda:");
+            var vnim = prompt("Tolong masukan NIM Anda:");
+            var vangkatan = prompt("Tolong masukan angkatan Anda:");
+
+            document.querySelector("#nama").innerText = vnama;
+            document.querySelector("#nim").innerText = vnim;
+            document.querySelector("#angkatan").innerText = vangkatan;
+
+
+            
+        } else {
+            alert("Anda bukan praktikan PPW1, anda tidak boleh masuk!")
+            // window.location="blank.html"
+        }
+
+
+
+
+
+
+    </script>
+</body>
+</html>
